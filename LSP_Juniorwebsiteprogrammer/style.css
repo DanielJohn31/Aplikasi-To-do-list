@@ -1,0 +1,155 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eef2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  margin: 0;
+}
+
+.app-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.app-header {
+  background: #28a745;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.app-body {
+  padding: 25px;
+}
+
+.form-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #eee;
+}
+
+.form-section form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  font-family: inherit;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #28a745;
+}
+
+button[type="submit"] {
+  padding: 10px 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-cancel {
+  padding: 10px 16px;
+  background: #f8f9fa;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  border-left: 5px solid #28a745;
+}
+
+.task-list li.completed {
+  background: #fff;
+  border-left-color: #adb5bd;
+  opacity: 0.7;
+}
+
+.task-list li.completed .task-title {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-edit,
+.btn-delete {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.btn-edit {
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+}
+
+.btn-edit:hover {
+  background: #0d6efd;
+  color: white;
+}
+
+.btn-delete {
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.btn-delete:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #adb5bd;
+  font-style: italic;
+}
